@@ -1,0 +1,10 @@
+<%- include('./../includes/header') %>
+<h1>This is Create Blog Page</h1>
+
+<form action="/edit-blog/<%= data.id %>" method="POST">
+    <label for="">Enter your title</label>
+    <input type="text" name="title" id="" value="<%= data.title %>">
+    <input type="submit">
+</form>
+<%- include('./../includes/footer') %>
+

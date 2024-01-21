@@ -1,0 +1,15 @@
+<%- include ('./includes/header') %>
+<body>
+    <h1>This is About Page</h1>
+
+    <%= dbData %>
+
+    <ul>
+        <% for(let i =0; i < dbData.length; i++) { %>
+            <li><%= dbData[i]  %></li>
+        <% } %>
+    </ul>
+
+    <%- include ('./includes/footer') %>
+</body>
+</html>

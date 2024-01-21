@@ -1,0 +1,12 @@
+<%- include('./../includes/header') %>
+<h1>This is Create Blog Page</h1>
+
+<form action="/create-blog" method="POST"  enctype="multipart/form-data">
+    <label for="">Enter your title</label>
+    <input type="text" name="title" id="">
+    <label for="">Uplaod the Image</label>
+    <input type="file" name="image">
+    <input type="submit">
+</form>
+<%- include('./../includes/footer') %>
+

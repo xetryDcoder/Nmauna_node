@@ -1,0 +1,17 @@
+<%- include('./../includes/header') %>
+<h1>This is Create Blog Page</h1>
+
+<table>
+    <% for( let i =0; i< data.length; i++) { %>
+    <tr>
+        <td><%= i+1 %></td>
+        <td><%= data[i].title %></td>
+        <td><img src="uploads/<%= data[i].image %>" alt="" width="20%" height="20%"></td>
+        <td>
+            <a href="/edit-blog/<%= data[i].id%>">Edit</a>
+            <a href="/delete-blog/<%= data[i].id%>">Delete</a>
+        </td>
+    </tr>
+    <% } %>
+</table>
+<%- include('./../includes/footer') %>
